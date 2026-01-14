@@ -1,2 +1,225 @@
 # wopwop
-ekhemmm
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan Penting!</title>
+    <style>
+        /* CSS: Mengatur tampilan agar cantik */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce7f3;
+            /* Warna pink muda */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            /* Mencegah scroll saat tombol membesar */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Gambar lucu di atas (Gif Beruang/Kucing) */
+        .gif-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #db2777;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Agar rapi di HP */
+        }
+
+        /* Tombol YES */
+        .yes-button {
+            font-size: 16px;
+            /* Ukuran awal penting untuk JS */
+            padding: 10px 20px;
+            background-color: #16a34a;
+            /* Hijau */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            /* Animasi halus */
+        }
+
+        .yes-button:hover {
+            background-color: #15803d;
+        }
+
+        /* Tombol NO */
+        .no-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #dc2626;
+            /* Merah */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .no-button:hover {
+            background-color: #b91c1c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="gif-container">
+            <img src="https://media.tenor.com/zGmJ9qA8MiwAAAAi/mocha-bear-hearts.gif" alt="Cute Bear">
+        </div>
+
+        <h1>Mau jalan sama aku gak? 💖</h1>
+
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Mau Dong!</button>
+            <button class="no-button" onclick="handleNoClick()">Gak ah</button>
+        </div>
+    </div>
+
+    <script>
+        // --- JAVASCRIPT YANG SUDAH DIPERBAIKI ---
+
+        // Daftar kata-kata buat tombol "No"
+        const message = [
+            "Yakin?",
+            "Beneran?",
+            "Plis dong 🥺",
+            "Pikir lagi!",
+            "Kejam banget...",
+            "Aku nangis nih",
+            "Ayolah...",
+            "Maaf, tombol ini rusak"
+        ];
+
+        let messageIndex = 0;
+
+        function handleNoClick() {
+            const noButton = document.querySelector(".no-button");
+            const yesButton = document.querySelector(".yes-button");
+
+            // 1. Ubah teks tombol No
+            noButton.textContent = message[messageIndex];
+
+            // Loop pesan agar tidak error jika sudah habis
+            messageIndex = (messageIndex + 1) % message.length;
+
+            // 2. Ambil ukuran font tombol Yes saat ini
+            const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+
+            // 3. Perbesar tombol Yes (dikali 1.5)
+            yesButton.style.fontSize = `${currentSize * 1.5}px`;
+        }
+
+        function handleYesClick() {
+            // Pindah ke halaman sukses
+            window.location.href = "yes_page.html";
+        }
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeay!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce7f3;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #db2777;
+            font-size: 2.5rem;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kiss">
+
+    <h1>Yeay! Sampai ketemu nanti! 🥰</h1>
+    <!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeay!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce7f3;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #db2777;
+            font-size: 2.5rem;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kiss">
+
+    <h1>Yeay! Sampai ketemu nanti! 🥰</h1>
+</body>
+
+</html>
+</body>
+
+</html>
