@@ -1,4 +1,3 @@
-# wopwop
 <!DOCTYPE html>
 <html lang="id">
 
@@ -181,45 +180,6 @@
     <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kiss">
 
     <h1>Yeay! Sampai ketemu nanti! 🥰</h1>
-    <!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeay!</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #fce7f3;
-            flex-direction: column;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-        }
-
-        h1 {
-            color: #db2777;
-            font-size: 2.5rem;
-        }
-
-        img {
-            width: 250px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Bear Kiss">
-
-    <h1>Yeay! Sampai ketemu nanti! 🥰</h1>
-</body>
-
-</html>
 </body>
 
 </html>
